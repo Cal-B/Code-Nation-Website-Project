@@ -1,0 +1,13 @@
+    <!--Image 3-->
+    <div class="gallery_a gallery">
+    <h2>Title 3</h2>
+    <img src="images/geometric_chaos_by_rachel_blandon_royalty_free.jpg" alt="Abstract art">
+    <p>Caption text 3</p>
+    </div class="gallery_a gallery">
+
+    <!--Image 4-->
+    <div class="gallery_b gallery">
+    <h2>Title 4</h2>
+    <img src="images/procedural_nebula_by_rachel_blandon_royalty_free.jpg" alt="Abstract art">
+    <p>Caption text 4</p>
+    <div class="gallery_b gallery">

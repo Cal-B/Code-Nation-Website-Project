@@ -1,0 +1,250 @@
+/*Contents index:
+--[1.0] Navbar
+        [1.1] Navbar Container 
+        [1.2] Navbar Links
+        [1.3] Navbar Dropdown
+--[2.0] Backgrounds
+        [2.1] Pages
+        [2.2] Galleries
+        [2.3] Boxes
+--[3.0] Fonts, Colours & Text
+        [3.1] Headers
+        [3.2] Paragraphs
+--[4.0] Sizes & Displays
+        [4.1] Images
+        [4.2] Flex
+        [4.3] About Me Flex
+/*USE "ctrl + f" to find desired section.
+
+/*Glossary:
+/*Class=Galleries (A & B) applies in pages: "codes, music and arts; alternates class bg colours"
+/*Class=Main applies to the first header & paragraph of every page.
+
+
+/*---------CODE---------*\
+  /*[1.0] START OF NAVBAR CODE*/
+/* [1.1] Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  /* [1.2] Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* [1.3] The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* [1.3a] Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+
+/* [1.3b] Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+/* [1.3c] Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+/* [1.3d] Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+/* [1.3e] Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+/* [1.3f]Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+    /*Learning resource used: W3Schools*/  
+/* END OF NAV BAR CODE */
+
+
+
+/* [2.0] START OF BACKGROUNDS*/
+/* [2.1] Page Background(s) */ 
+    body {
+     background-image: url("images/131_by_infrablack_royalty_free.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed; 
+    }
+/* [2.2] Gallery Backgrounds*/
+.gallery_a
+{
+    background-color: rgba(128, 208, 240, 0.425);
+    border-radius: 25;
+    
+}
+.gallery_b
+{
+    background-color: rgba(240, 128, 128, 0.425);
+    border-radius: 25;
+  }
+
+/* [2.3] Box Backgrounds (Isn't fading very well)*/
+    .box1
+    {
+      background-color: rgba(240, 128, 128, 0.425);
+    }
+
+    .box2
+    {
+      background-color: rgba(220, 108, 108, 0.425);
+    }
+
+    .box3
+    {
+      background-color: rgba(200, 88, 88, 0.425);
+    }
+/* END OF BACKGROUNDS */
+
+
+
+/*[3.0] START OF FONTS & COLOURS */
+  /* [3.1] Header Font(s) */
+    .main h1
+    {   
+        font-family: 'Viaoda Libre', cursive;
+        color: whitesmoke;
+        outline: black;
+        
+    }
+/* [3.2] Galleries Headers */
+    .gallery_a, h4, h3, h2 
+    {   
+        font-family: 'Viaoda Libre', cursive;
+        color: whitesmoke;
+        outline: black;
+        background-color: rgba(128, 208, 240, 0.425);
+        
+    }
+
+    .gallery_b h4, h3, h2
+    {   
+        font-family: 'Viaoda Libre', cursive;
+        color: whitesmoke;
+        outline: black;
+        background-color: rgba(240, 128, 128, 0.425);
+    }
+
+/* [3.2] Paragraph Font, colour & textbox(s) */
+    .main 
+    {
+        font-family: 'Quicksand', sans-serif;
+        background-color: rgba(240, 128, 128, 0.425);
+        padding: auto;
+        margin:auto;
+    }
+
+    .gallery_a p
+    {
+        font-family: 'Quicksand', sans-serif;
+        background-color: rgba(128, 208, 240, 0.425);
+        padding: auto;
+        margin:auto;
+    }
+
+    .gallery_b p
+    {
+        font-family: 'Quicksand', sans-serif;
+        background-color: rgba(240, 128, 128, 0.425);
+        padding: auto;
+        margin:auto;
+    }
+
+    .flex_container p
+    {
+      color: black;
+    }
+
+/* END OF FONTS AND COLOURS */
+
+
+
+/* [4.0] START OF SIZE & DISPLAYS */
+/* [4.1] Gallery. */
+  .gallery img
+{
+  max-width: 50%;
+}
+
+/*[4.2] Flex*/
+.box
+{ margin:auto;
+  border-radius: 25px;
+  padding: 40;
+  height: auto;
+  width: 30%;
+  text-align: center;
+  font-size: large;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.flex_container 
+{ display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 30 px;
+  margin:auto;
+  height: auto;
+  width: 95%;
+  min-height: 100vh;
+  border-radius: 25px;
+  background-color: rgba(128, 208, 240, 0.425);
+}
+
+/* [4.3] About Me section, gallery flex */
+.about_me_flex, .gallery_flex
+{
+  display: flex;
+  flex-direction: row;
+  text-align: center
+}
+
+/* [4.4] Music, arts, code display */
+.gallery
+{
+  padding: 30 px;
+  margin:auto;
+  height: auto;
+  width: 95%;
+}
